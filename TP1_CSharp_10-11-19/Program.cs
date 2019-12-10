@@ -10,6 +10,17 @@ namespace TP1_CSharp_10_11_19
     {
         static void Main(string[] args)
         {
+
+            var Morningstar = new Context(new State_Employe());
+            Console.Write(Morningstar.calculPrime() + "\n");
+            //Cadre
+            Morningstar.promouvoir();
+            Console.Write(Morningstar.calculPrime() + "\n");
+            //Directeur
+            Morningstar.promouvoir();
+            Console.Write(Morningstar.calculPrime() + "\n");
+            //Esssai verif
+            Morningstar.promouvoir();
         }
     }
 }
